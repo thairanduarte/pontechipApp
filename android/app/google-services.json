@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "997124717455",
+    "firebase_url": "https://potenchip-b6958.firebaseio.com",
+    "project_id": "potenchip-b6958",
+    "storage_bucket": "potenchip-b6958.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997124717455:android:751ba72e63601e608669fa",
+        "android_client_info": {
+          "package_name": "com.example.potenchip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997124717455-pkghn316pena3qdprrg363oq5s8uahvo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZNhfw7spfyWQ6r4TJhW4iJzGlpii3YIA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997124717455-pkghn316pena3qdprrg363oq5s8uahvo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
