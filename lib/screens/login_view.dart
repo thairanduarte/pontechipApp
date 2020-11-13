@@ -83,6 +83,7 @@ class _LoginViewState extends State<LoginView> {
     if (_currentUser != null) return _currentUser;
     try {
       final GoogleSignInAccount googleSignInAccount =
+          await googleSignIn.signOut();
           await googleSignIn.signIn();
       final GoogleSignInAuthentication googleSignInAuthentication =
           await googleSignInAccount.authentication;
@@ -100,7 +101,9 @@ class _LoginViewState extends State<LoginView> {
       return user;
     } catch (error) {
       print("Erro de login");
-      return null;
+      User user = null;
+
+      return user;
     }
   }
 
@@ -111,7 +114,7 @@ class _LoginViewState extends State<LoginView> {
     print("cheguei no get user");
     final User user = await _getUser();
     print("passei get user");
-
+    print(user);
     if (user == null) {
       _scaffoldKey.currentState.showSnackBar(SnackBar(
           content: Text("Não foi possivel fazer o login, tente novamente"),

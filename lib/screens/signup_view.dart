@@ -93,7 +93,8 @@ class _SignUpViewState extends State<SignUpView> {
     if (_currentUser != null) return _currentUser;
     try {
       final GoogleSignInAccount googleSignInAccount =
-          await googleSignIn.signIn();
+          await googleSignIn.signOut();
+               await googleSignIn.signIn();
       final GoogleSignInAuthentication googleSignInAuthentication =
           await googleSignInAccount.authentication;
 
